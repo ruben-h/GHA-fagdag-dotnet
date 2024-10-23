@@ -2,10 +2,10 @@
 
 Ja, mange steg, men ikke vær redd, det går fort.
 
-1. Logg inn i Sonat Azure, og velg "Sonat Playground" subscriptionen. 
-2. Eventuelt, naviger til resource groupen: ["fagdag-github-actions"](https://portal.azure.com/#@sonatconsulting.onmicrosoft.com/resource/subscriptions/8db703d9-3a2c-49a9-9f7f-48fb8aa55aed/resourceGroups/fagdag-github-actions/overview)
+1. Logg inn i Sonat Azure, og velg "Sonat Playground" subscriptionen.
+2. Eventuelt, naviger til resource groupen: "fagdag-github-actions"
 3. Opprett din egen Azure Function app i resource group: "fagdag-github-actions", ved å trykke "+ Create"...
-   1. Velg "Azure services only", og finn "Function app" i listen. Trykk på "Create" 
+   1. Velg "Azure services only", og finn "Function app" i listen. Trykk på "Create"
    2. På "hosting options" velg "Consumption"
    3. Navngi Function appen slik: 'github-fagdag-<ditt-navn>' for å kunne skille de fra hverandre.
    4. Velg ".NET" som runtime stack. Og "8 (LTS) isolated worker model" som version. Velg "Norway east" som "Region", og "Windows" som operativsystem.
@@ -20,14 +20,13 @@ Ja, mange steg, men ikke vær redd, det går fort.
 9. I azure, trykk "Refresh" i menyen på function appen. Ser du Functionen "SumAvToTall" i listen?
 10. Trykk på Functionen "SumAvToTall". Test den ved å: Trykke "Test/Run" og legg til url parameter "a" og "b" der. (Alternativt: "Get function url", og manuelt legg til to tall som parameter a og b)
 
-
 ## Bildeguide til stegene over her (nice!):
 
 Steg 2:
 
 ![alt text](docs/2.png)
 
-Steg 3.1: 
+Steg 3.1:
 
 ![alt text](docs/3.1.png)
 
@@ -61,9 +60,3 @@ Steg 10:
 
 Alternativt, bruk urlen direkte, med query params:
 ![alt text](docs/10d.png)
-
-
-
-
-
-
