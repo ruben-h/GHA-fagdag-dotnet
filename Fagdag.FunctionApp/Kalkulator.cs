@@ -7,3 +7,4 @@ public static class Kalkulator
         return a + b;
     }
 }
+
