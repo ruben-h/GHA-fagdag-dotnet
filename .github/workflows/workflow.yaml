@@ -9,13 +9,8 @@ env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # Function app path (denne trenger du ikke endre)
 
 jobs:
-  commit-and-something:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Sjekk ut koden'
-        uses: actions/checkout@v4
   build-and-test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: 'Sjekk ut koden'
         uses: actions/checkout@v4
@@ -31,8 +26,8 @@ jobs:
         run: dotnet build --configuration Release --output ./output
 
       # Oppgave 5: Kjører testene i prosjektet. Feiler jobben dersom tester feiler.
-#      - name: Run tests
-#        run: 
+      - name: Run tests
+        run: dotnet test --verbosity minimal
         
       # Oppgave 6: List ut nuget dependencies med sårbarheter. 
       # Feiler ikke jobben dersom den finner noe,
