@@ -15,15 +15,15 @@ jobs:
       - name: 'Sjekk ut koden'
         uses: actions/checkout@v4
 
-      # Oppgave 3: Sette opp riktig  .net versjon før bygging (Denne er gjort feridg for dere)
+      # Oppgave 3: Sette opp riktig .net versjon før bygging (Denne er gjort feridg for dere)
       - name: Setup DotNet Environment
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
       # Oppgave 4: Bygge koden:
-#      - name: Build the project
-#        run: 
+      - name: Build the project
+        run: dotnet build 
 
       # Oppgave 5: Kjører testene i prosjektet. Feiler jobben dersom tester feiler.
 #      - name: Run tests
