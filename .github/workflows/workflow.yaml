@@ -9,6 +9,11 @@ env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # Function app path (denne trenger du ikke endre)
 
 jobs:
+  commit-and-something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Sjekk ut koden'
+        uses: actions/checkout@v4
   build-and-test:
     runs-on: windows-latest
     steps:
