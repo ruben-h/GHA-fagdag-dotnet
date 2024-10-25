@@ -33,3 +33,4 @@ public class SumFunction
         return new OkObjectResult($"Summen av {num1} og {num2} er: {sum}.");
     }
 }
+
